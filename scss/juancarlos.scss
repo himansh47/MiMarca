@@ -1,6 +1,6 @@
 body{
-    background-attachment: fixed;
-    background-color: #000;
+    // background-attachment: fixed;
+    background-color: rgb(150, 10, 10);
 }
 /*--/header --*/
 
@@ -230,7 +230,7 @@ div#word-mark h1 a {
     height: 50vw;
     position: relative;
     z-index: -11;
-    & h1{
+    & .snow-information {
         text-align: center;
         padding: 20% 10% 25% 10%;
     }
@@ -318,8 +318,16 @@ div#word-mark h1 a {
   }
  
 #sec-study{
-    border: 2px solid red;
-    // overflow: hidden;
+    // background-attachment: fixed;
+    // background-image: url(../img/inteligencia-artificial-software.jpg);
+    // background-repeat: no-repeat;
+    // background-size: cover;
+    // -webkit-background-size: cover;
+    // -moz-background-size: cover;
+    // -o-background-size: cover;
+    // -ms-background-size: cover;
+    // background-color: #000;
+    overflow: hidden;
     & .study{
         
         & .study-information{
@@ -338,6 +346,12 @@ div#word-mark h1 a {
 }
 .card-columnsJC .card {
     margin-bottom: 0.75rem;
+    & h2{
+        padding: 30px 0;
+        border-top: 1px solid rgba(255, 255, 255, 0.3);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    
+    }
   }
   
 
@@ -430,82 +444,61 @@ div#word-mark h1 a {
     }
 }
 
-/* 
-  ##Device = Desktops
-  ##Screen = 1281px to higher resolution desktops
-*/
 
-@media (min-width: 1281px) {
-  
-    //CSS
-    
-  }
-  
+
+ 
   /* 
-    ##Device = Laptops, Desktops
-    ##Screen = B/w 1025px to 1280px
+    ##Device = Most of the Smartphones Mobiles (Portrait)
+    ##Screen = B/w 320px to 479px
   */
   
-  @media (min-width: 1025px) and (max-width: 1280px) {
+  @media (min-width: 320px) {
     
     //CSS
     
   }
+   /* 
+    ##Device = Low Resolution Tablets, Mobiles (Landscape)
+    ##Screen = B/w 481px to 767px
+  */
+  
+  @media (min-width: 481px) {
+    
+    //CSS
+    
+  }
+
   
   /* 
     ##Device = Tablets, Ipads (portrait)
     ##Screen = B/w 768px to 1024px
   */
   
-  @media (min-width: 768px) and (max-width: 1024px) {
+  @media (min-width: 768px) {
     
     //CSS
     
   }
-  
-  /* 
-    ##Device = Tablets, Ipads (landscape)
-    ##Screen = B/w 768px to 1024px
+    /* 
+    ##Device = Laptops, Desktops
+    ##Screen = B/w 1025px to 1280px
   */
   
-  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  @media (min-width: 1025px) {
     
     //CSS
     
   }
-  
-  /* 
-    ##Device = Low Resolution Tablets, Mobiles (Landscape)
-    ##Screen = B/w 481px to 767px
-  */
-  
-  @media (min-width: 481px) and (max-width: 767px) {
+
+    /* 
+    ##Device = Desktops
+    ##Screen = 1281px to higher resolution desktops
+    */
+
+    @media (min-width: 1281px) {
     
-    //CSS
-    
-  }
-  
-  /* 
-    ##Device = Most of the Smartphones Mobiles (Portrait)
-    ##Screen = B/w 320px to 479px
-  */
-  
-  @media (min-width: 320px) and (max-width: 480px) {
-    
-    //CSS
-    
-  }
-  @media (min-width: 576px) {
-    .card-columnsJC {
-      -webkit-column-count: 3;
-      -moz-column-count: 3;
-      column-count: 2;
-      -webkit-column-gap: 1.25rem;
-      -moz-column-gap: 1.25rem;
-      column-gap: 1.25rem;
+        //CSS
+        
     }
-    .card-columnsJC .card {
-      display: inline-block;
-      width: 100%;
-    }
-  }
+  
+  

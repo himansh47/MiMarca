@@ -1,6 +1,5 @@
 body {
-  background-attachment: fixed;
-  background-color: #000;
+  background-color: #960a0a;
 }
 
 /*--/header --*/
@@ -225,7 +224,7 @@ div#word-mark h1 a {
   position: relative;
   z-index: -11;
 }
-.img-principal h1 {
+.img-principal .snow-information {
   text-align: center;
   padding: 20% 10% 25% 10%;
 }
@@ -315,7 +314,7 @@ div#word-mark h1 a {
   }
 }
 #sec-study {
-  border: 2px solid red;
+  overflow: hidden;
 }
 #sec-study .study .study-information {
   font-size: 0.85rem;
@@ -328,6 +327,11 @@ div#word-mark h1 a {
 
 .card-columnsJC .card {
   margin-bottom: 0.75rem;
+}
+.card-columnsJC .card h2 {
+  padding: 30px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 #sec-abilities {
@@ -423,43 +427,24 @@ div#word-mark h1 a {
   }
 }
 /* 
-  ##Device = Desktops
-  ##Screen = 1281px to higher resolution desktops
-*/
-/* 
-  ##Device = Laptops, Desktops
-  ##Screen = B/w 1025px to 1280px
-*/
-/* 
-  ##Device = Tablets, Ipads (portrait)
-  ##Screen = B/w 768px to 1024px
-*/
-/* 
-  ##Device = Tablets, Ipads (landscape)
-  ##Screen = B/w 768px to 1024px
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
 */
 /* 
   ##Device = Low Resolution Tablets, Mobiles (Landscape)
   ##Screen = B/w 481px to 767px
 */
 /* 
-  ##Device = Most of the Smartphones Mobiles (Portrait)
-  ##Screen = B/w 320px to 479px
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
 */
-@media (min-width: 576px) {
-  .card-columnsJC {
-    -webkit-column-count: 3;
-    -moz-column-count: 3;
-    column-count: 2;
-    -webkit-column-gap: 1.25rem;
-    -moz-column-gap: 1.25rem;
-    column-gap: 1.25rem;
-  }
-
-  .card-columnsJC .card {
-    display: inline-block;
-    width: 100%;
-  }
-}
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+/* 
+##Device = Desktops
+##Screen = 1281px to higher resolution desktops
+*/
 
 /*# sourceMappingURL=juancarlos.css.map */
