@@ -1,0 +1,465 @@
+body {
+  background-attachment: fixed;
+  background-color: #000;
+}
+
+/*--/header --*/
+header.banner_section {
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+button.btn.login-btn {
+  padding: 8px 24px;
+  background: #037ef3;
+  color: #fff;
+  border: none;
+  font-size: 0.9em;
+  letter-spacing: 1px;
+}
+
+button.btn.login-btn:hover {
+  background: #ffc107;
+  color: #0e0d0d;
+}
+
+/*** Navigation Styles ***/
+nav.navigation {
+  width: 100%;
+  height: 100px;
+  background: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+nav.navigation.navShadow {
+  -webkit-box-shadow: 0 4px 30px -5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 30px -5px rgba(0, 0, 0, 0.2);
+  height: 80px;
+  background: #000;
+}
+nav.navigation.navShadow .nav-honey {
+  width: 100vw;
+}
+nav.navigation.navShadow .nav-honey li a {
+  color: white;
+}
+nav.navigation.navShadow #word-mark {
+  color: white;
+}
+
+nav.navShadow #word-mark {
+  color: #037ef3;
+  font-weight: 900;
+}
+
+#brand,
+#menu,
+ul.nav-honey {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+#brand {
+  padding-left: 40px;
+  float: left;
+  width: 20%;
+}
+
+#logo {
+  width: 55px;
+  height: 55px;
+  background: #037ef3;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+#word-mark {
+  width: 120px;
+  border-radius: 90px;
+  margin-left: 8px;
+  opacity: 1;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+#logo a i {
+  font-size: 2em;
+  text-align: center;
+  display: block;
+  line-height: 1.7;
+  color: #fff;
+}
+
+div#word-mark h1 a {
+  color: #fff;
+  font-size: 1em;
+  text-transform: uppercase;
+  font-weight: 600;
+  line-height: 0;
+  letter-spacing: 1px;
+  font-family: "Roboto", sans-serif;
+}
+
+/***  Styles ***/
+#menu {
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  padding-right: 40px;
+  float: right;
+  width: 80%;
+}
+
+.nav-honey li {
+  margin-left: 20px;
+  list-style: none;
+}
+
+.nav-honey li a {
+  background: none;
+  display: block;
+  color: black;
+  font-size: 0.9em;
+  font-weight: 900;
+  line-height: 28px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: 0.5em;
+}
+
+#menu-toggle {
+  width: 55px;
+  height: 55px;
+  background: #037ef3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 50%;
+  cursor: pointer;
+  display: none;
+}
+
+#menu-toggle:hover .bar {
+  width: 25px;
+}
+
+#menu-toggle.closeMenu .bar {
+  width: 25px;
+}
+
+#menu-toggle.closeMenu .bar:first-child {
+  -webkit-transform: translateY(7px) rotate(45deg);
+  transform: translateY(7px) rotate(45deg);
+}
+
+#menu-toggle.closeMenu .bar:nth-child(2) {
+  -webkit-transform: scale(0);
+  transform: scale(0);
+}
+
+#menu-toggle.closeMenu .bar:last-child {
+  -webkit-transform: translateY(-7px) rotate(-45deg);
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+.bar {
+  width: 25px;
+  height: 2px;
+  background: #fff;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.bar:nth-child(2) {
+  width: 20px;
+  margin: 5px 0;
+}
+
+.bar:last-child {
+  width: 15px;
+}
+
+.nav-honey li a {
+  color: #037ef3;
+}
+
+.scroll {
+  color: #000;
+}
+
+/*--/banner--*/
+.img-principal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 0;
+  height: 100vh;
+  background: url(../img/imagen_principal-2998.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -ms-background-size: cover;
+  background-color: #000;
+  height: 50vw;
+  position: relative;
+  z-index: -11;
+}
+.img-principal h1 {
+  text-align: center;
+  padding: 20% 10% 25% 10%;
+}
+
+.snow-container {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  max-width: 100%;
+  top: 0;
+  z-index: 9;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.snow-container.two {
+  height: 440px;
+}
+
+.snow {
+  display: block;
+  position: absolute;
+  z-index: 99;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  pointer-events: none;
+  -webkit-transform: translate3d(0, -100%, 0);
+  transform: translate3d(0, -100%, 0);
+  -webkit-animation: snow linear infinite;
+  animation: snow linear infinite;
+}
+
+.snow.foreground {
+  background-image: url("../img/1.png");
+  -webkit-animation-duration: 15s;
+  animation-duration: 15s;
+}
+
+.snow.foreground.layered {
+  -webkit-animation-delay: 7.5s;
+  animation-delay: 7.5s;
+}
+
+.snow.middleground {
+  background-image: url(../img/2.png);
+  -webkit-animation-duration: 20s;
+  animation-duration: 20s;
+}
+
+.snow.middleground.layered {
+  -webkit-animation-delay: 10s;
+  animation-delay: 10s;
+}
+
+.snow.background {
+  background-image: url(../img/3.png);
+  -webkit-animation-duration: 30s;
+  animation-duration: 30s;
+}
+
+.snow.background.layered {
+  -webkit-animation-delay: 15s;
+  animation-delay: 15s;
+}
+
+@-webkit-keyframes snow {
+  0% {
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(15%, 100%, 0);
+    transform: translate3d(15%, 100%, 0);
+  }
+}
+@keyframes snow {
+  0% {
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(15%, 100%, 0);
+    transform: translate3d(15%, 100%, 0);
+  }
+}
+#sec-study {
+  border: 2px solid red;
+}
+#sec-study .study .study-information {
+  font-size: 0.85rem;
+  font-style: bold;
+}
+#sec-study .study .study-img img {
+  width: 36rem;
+  border-radius: 1.7rem;
+}
+
+.card-columnsJC .card {
+  margin-bottom: 0.75rem;
+}
+
+#sec-abilities {
+  position: relative;
+}
+
+.card {
+  overflow: hidden;
+}
+.card figure img {
+  width: 100%;
+}
+
+/*parte del responsice del header*/
+@media screen and (max-width: 942px) {
+  #menu-toggle {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: flex;
+  }
+
+  nav.main-header {
+    height: 75px;
+  }
+
+  ul.nav-honey {
+    display: inline-block;
+    width: 100vw;
+    height: auto;
+    background: none;
+    position: absolute;
+    top: 65px !important;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    left: 0;
+    overflow: hidden;
+  }
+  ul.nav-honeyli a {
+    color: white;
+  }
+
+  nav.main-header.navShadow {
+    height: 65px;
+  }
+
+  ul.showMenu {
+    margin-top: 0.9rem;
+  }
+  ul.showMenu li {
+    height: auto;
+    opacity: 1;
+    visibility: visible;
+    padding-top: 0.3em;
+    background: rgba(0, 0, 0, 0.9);
+  }
+  ul.showMenu lia {
+    color: #fff;
+  }
+
+  .nav-honey li {
+    width: 100%;
+    float: left;
+    padding-left: 0px;
+    opacity: 0;
+    visibility: hidden;
+    margin-left: 0;
+    -webkit-transition: all 0.3s 0.1s;
+    transition: all 0.3s 0.1s;
+  }
+
+  .nav-honey li a {
+    padding: 0.5em 0;
+    display: block;
+  }
+
+  #head-line {
+    -webkit-transform: scale(0.8);
+    transform: scale(0.8);
+  }
+
+  #brand {
+    padding-left: 30px;
+    float: left;
+    width: 26%;
+  }
+
+  button.btn.login-btn {
+    padding: 8px 20px;
+    font-size: 0.8em;
+    letter-spacing: 1px;
+    margin-bottom: 1em;
+  }
+}
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+@media (min-width: 576px) {
+  .card-columnsJC {
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 2;
+    -webkit-column-gap: 1.25rem;
+    -moz-column-gap: 1.25rem;
+    column-gap: 1.25rem;
+  }
+
+  .card-columnsJC .card {
+    display: inline-block;
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=juancarlos.css.map */
