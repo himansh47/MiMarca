@@ -1,5 +1,13 @@
 body {
-  background-color: #960a0a;
+  background-attachment: fixed !important;
+  background-color: black;
+  background-image: url(../img/jc.jpg) !important;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -ms-background-size: cover;
 }
 
 /*--/header --*/
