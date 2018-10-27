@@ -27,7 +27,6 @@ button.btn.login-btn {
   font-size: 0.9em;
   letter-spacing: 1px;
 }
-
 button.btn.login-btn:hover {
   background: #ffc107;
   color: #0e0d0d;
@@ -46,7 +45,6 @@ nav.navigation {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
-
 nav.navigation.navShadow {
   -webkit-box-shadow: 0 4px 30px -5px rgba(0, 0, 0, 0.2);
   box-shadow: 0 4px 30px -5px rgba(0, 0, 0, 0.2);
@@ -62,7 +60,6 @@ nav.navigation.navShadow .nav-honey li a {
 nav.navigation.navShadow #word-mark {
   color: white;
 }
-
 nav.navShadow #word-mark {
   color: #037ef3;
   font-weight: 900;
@@ -92,6 +89,13 @@ ul.nav-honey {
   border-radius: 50%;
   cursor: pointer;
 }
+#logo a i {
+  font-size: 2em;
+  text-align: center;
+  display: block;
+  line-height: 1.7;
+  color: #fff;
+}
 
 #word-mark {
   width: 120px;
@@ -101,16 +105,7 @@ ul.nav-honey {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
-
-#logo a i {
-  font-size: 2em;
-  text-align: center;
-  display: block;
-  line-height: 1.7;
-  color: #fff;
-}
-
-div#word-mark h1 a {
+#word-mark h1 a {
   color: #fff;
   font-size: 1em;
   text-transform: uppercase;
@@ -134,7 +129,6 @@ div#word-mark h1 a {
   margin-left: 20px;
   list-style: none;
 }
-
 .nav-honey li a {
   background: none;
   display: block;
@@ -164,25 +158,20 @@ div#word-mark h1 a {
   cursor: pointer;
   display: none;
 }
-
 #menu-toggle:hover .bar {
   width: 25px;
 }
-
 #menu-toggle.closeMenu .bar {
   width: 25px;
 }
-
 #menu-toggle.closeMenu .bar:first-child {
   -webkit-transform: translateY(7px) rotate(45deg);
   transform: translateY(7px) rotate(45deg);
 }
-
 #menu-toggle.closeMenu .bar:nth-child(2) {
   -webkit-transform: scale(0);
   transform: scale(0);
 }
-
 #menu-toggle.closeMenu .bar:last-child {
   -webkit-transform: translateY(-7px) rotate(-45deg);
   transform: translateY(-7px) rotate(-45deg);
@@ -195,18 +184,12 @@ div#word-mark h1 a {
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
 }
-
 .bar:nth-child(2) {
   width: 20px;
   margin: 5px 0;
 }
-
 .bar:last-child {
   width: 15px;
-}
-
-.nav-honey li a {
-  color: #037ef3;
 }
 
 .scroll {
@@ -248,7 +231,6 @@ div#word-mark h1 a {
   pointer-events: none;
   overflow: hidden;
 }
-
 .snow-container.two {
   height: 440px;
 }
@@ -267,35 +249,29 @@ div#word-mark h1 a {
   -webkit-animation: snow linear infinite;
   animation: snow linear infinite;
 }
-
 .snow.foreground {
   background-image: url("../img/1.png");
   -webkit-animation-duration: 15s;
   animation-duration: 15s;
 }
-
 .snow.foreground.layered {
   -webkit-animation-delay: 7.5s;
   animation-delay: 7.5s;
 }
-
 .snow.middleground {
   background-image: url(../img/2.png);
   -webkit-animation-duration: 20s;
   animation-duration: 20s;
 }
-
 .snow.middleground.layered {
   -webkit-animation-delay: 10s;
   animation-delay: 10s;
 }
-
-.snow.background {
+.snow.middleground .snow.background {
   background-image: url(../img/3.png);
   -webkit-animation-duration: 30s;
   animation-duration: 30s;
 }
-
 .snow.background.layered {
   -webkit-animation-delay: 15s;
   animation-delay: 15s;
@@ -435,20 +411,20 @@ div#word-mark h1 a {
   }
 }
 /* 
-  ##Device = Most of the Smartphones Mobiles (Portrait)
-  ##Screen = B/w 320px to 479px
+##Device = Most of the Smartphones Mobiles (Portrait)
+##Screen = B/w 320px to 479px
 */
 /* 
-  ##Device = Low Resolution Tablets, Mobiles (Landscape)
-  ##Screen = B/w 481px to 767px
+##Device = Low Resolution Tablets, Mobiles (Landscape)
+##Screen = B/w 481px to 767px
 */
 /* 
-  ##Device = Tablets, Ipads (portrait)
-  ##Screen = B/w 768px to 1024px
+##Device = Tablets, Ipads (portrait)
+##Screen = B/w 768px to 1024px
 */
 /* 
-  ##Device = Laptops, Desktops
-  ##Screen = B/w 1025px to 1280px
+##Device = Laptops, Desktops
+##Screen = B/w 1025px to 1280px
 */
 /* 
 ##Device = Desktops
