@@ -513,8 +513,15 @@ ul.nav-honey {
         padding-right: 0rem !important;
         margin-left: 0rem !important;
         margin-right: 0rem !important;
-        & .study-img{
-            padding: 1rem 15% 1rem 15% !important;
+        
+        .study-img-container{
+            
+            & .study-img{
+                padding: 1rem 15% 1rem 15% !important;
+            }
+            & .pt-5{
+                padding-top: 3rem  !important;
+            }
         }
     }
 
