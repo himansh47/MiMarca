@@ -49,7 +49,7 @@ nav.navigation.navShadow {
   -webkit-box-shadow: 0 4px 30px -5px rgba(0, 0, 0, 0.2);
   box-shadow: 0 4px 30px -5px rgba(0, 0, 0, 0.2);
   height: 80px;
-  background: #000;
+  background: #1c1d21;
 }
 nav.navigation.navShadow .nav-honey {
   width: 100vw;
@@ -85,7 +85,7 @@ ul.nav-honey {
 #logo {
   width: 55px;
   height: 55px;
-  background: #037ef3;
+  background: #006cd1;
   border-radius: 50%;
   cursor: pointer;
 }
@@ -190,6 +190,11 @@ ul.nav-honey {
 }
 .bar:last-child {
   width: 15px;
+}
+
+.animation-center {
+  -webkit-transition: all 3.3s;
+  transition: all 2.3s;
 }
 
 .scroll {
@@ -302,31 +307,41 @@ ul.nav-honey {
 }
 #sec-study .study .study-information {
   font-size: 0.85rem;
-  font-style: bold;
+  font-weight: bold;
 }
 #sec-study .study .study-img img {
   width: 36rem;
   border-radius: 1.7rem;
 }
 
-.card-columnsJC .card {
+.cardJC {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.75rem;
+}
+.cardJC .card-columnsJC {
   margin-bottom: 0.75rem;
 }
-.card-columnsJC .card h2 {
-  padding: 30px 0;
-  border-top: 1px solid rgba(255, 255, 255, 0.3);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+
+.bg-trans {
+  background: rgba(255, 255, 255, 0) !important;
+  border: none;
+  overflow: hidden;
 }
 
 #sec-abilities {
   position: relative;
-}
-
-.card {
-  overflow: hidden;
-}
-.card figure img {
-  width: 100%;
 }
 
 /*parte del responsice del header*/
@@ -414,18 +429,76 @@ ul.nav-honey {
 ##Device = Most of the Smartphones Mobiles (Portrait)
 ##Screen = B/w 320px to 479px
 */
+@media (min-width: 320px) {
+  .study-img {
+    width: 320px !important;
+  }
+}
 /* 
 ##Device = Low Resolution Tablets, Mobiles (Landscape)
 ##Screen = B/w 481px to 767px
 */
+@media (min-width: 481px) {
+  .card-columns {
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+    -webkit-column-gap: 1.25rem;
+    -moz-column-gap: 1.25rem;
+    column-gap: 1.25rem;
+  }
+
+  .card-columns .card {
+    display: inline-block;
+    width: 100%;
+  }
+
+  .study-img {
+    width: 350px !important;
+  }
+}
 /* 
 ##Device = Tablets, Ipads (portrait)
 ##Screen = B/w 768px to 1024px
 */
+@media (min-width: 768px) {
+  .card-columnsJC {
+    -webkit-column-count: 1;
+    -moz-column-count: 1;
+    column-count: 1;
+    -webkit-column-gap: 1.25rem;
+    -moz-column-gap: 1.25rem;
+    column-gap: 1.25rem;
+  }
+
+  .card-columnsJC .cardJC {
+    display: inline-block;
+    width: 100%;
+  }
+
+  .study-img {
+    width: 500px !important;
+  }
+}
 /* 
 ##Device = Laptops, Desktops
 ##Screen = B/w 1025px to 1280px
 */
+@media (min-width: 1025px) {
+  .card-columns {
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+    -webkit-column-gap: 1.25rem;
+    -moz-column-gap: 1.25rem;
+    column-gap: 1.25rem;
+  }
+
+  .card-columns .card {
+    display: inline-block;
+    width: 100%;
+  }
+}
 /* 
 ##Device = Desktops
 ##Screen = 1281px to higher resolution desktops

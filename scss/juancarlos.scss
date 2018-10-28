@@ -13,6 +13,7 @@ body{
 /*--/header --*/
 
 header{
+   
     &.banner_section {
         width: 100vw;
         height: 100vh;
@@ -58,7 +59,7 @@ nav{
             box-shadow: 0 4px 30px -5px rgba(0, 0, 0, 0.2);
             height: 80px;
             
-            background: #000;
+            background: #1c1d21;
             & .nav-honey {
                 width: 100vw;
                 & li a{
@@ -99,7 +100,7 @@ ul.nav-honey {
 #logo {
     width: 55px;
     height: 55px;
-    background: #037ef3;
+    background: #006cd1;
     border-radius: 50%;
     cursor: pointer;
     & a i {
@@ -210,7 +211,10 @@ ul.nav-honey {
     }
 }
 
-
+.animation-center {
+    -webkit-transition: all 3.3s;
+        transition: all 2.3s;
+}
 .scroll{
     color: #000;
 }
@@ -338,7 +342,7 @@ ul.nav-honey {
         & .study-information{
             
             font-size: .85rem;
-            font-style: bold;
+            font-weight: bold;
         }
         & .study-img{
             & img{
@@ -349,104 +353,112 @@ ul.nav-honey {
 }
 
 }
-.card-columnsJC .card {
-    margin-bottom: 0.75rem;
-    & h2{
-        padding: 30px 0;
-        border-top: 1px solid rgba(255, 255, 255, 0.3);
-        border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 
+.cardJC {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 0.75rem;
+    & .card-columnsJC{
+        margin-bottom: 0.75rem;
     }
+  }
+
+  .bg-trans{
+    background: rgba(255, 255, 255, 0) !important;
+    border: none;
+    overflow: hidden;
 }
-
-
-
 
 #sec-abilities{
 position: relative;
 }
 
-.card{
 
-    overflow: hidden;
-    & figure img{
-        width: 100%;
-    }
-}
 
 /*parte del responsice del header*/
 @media screen and (max-width: 942px){
-#menu-toggle {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    position: flex;
-}
-nav.main-header {
-    height: 75px;
-}
-ul.nav-honey {
-    display: inline-block;
-    width:100vw;
-    height: auto;
-    background: none;
-    position: absolute;
-    top: 65px !important;
-    -webkit-transition: all 0.3s;
-    transition: all 0.3s;
-    left: 0;
-    overflow: hidden;
-    &li a {
-        color: rgb(255, 255, 255);
+    #menu-toggle {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        position: flex;
     }
-}
-nav.main-header.navShadow {
-    height: 65px;
-}
-ul.showMenu {
-    margin-top: .9rem;
-    & li {
+    nav.main-header {
+        height: 75px;
+    }
+    ul.nav-honey {
+        display: inline-block;
+        width:100vw;
         height: auto;
-        opacity: 1;
-        visibility: visible;
-        
-        padding-top: .3em;
-        background: rgba(0, 0, 0, 0.9);
-        &a{
-            color: #fff;
+        background: none;
+        position: absolute;
+        top: 65px !important;
+        -webkit-transition: all 0.3s;
+        transition: all 0.3s;
+        left: 0;
+        overflow: hidden;
+        &li a {
+            color: rgb(255, 255, 255);
         }
     }
-}
-.nav-honey li {
-    width:100%;
-    float: left;
-    padding-left:0px;
-    opacity: 0;
-    visibility: hidden;
-    margin-left: 0;
-    -webkit-transition: all 0.3s 0.1s;
-    transition: all 0.3s 0.1s;
-}
-.nav-honey li a{
-    padding:0.5em 0;
-    display: block;
-    
-}
-#head-line {
-    -webkit-transform: scale(0.8);
-    transform: scale(0.8);
-}
-#brand {
-    padding-left: 30px;
-    float: left;
-    width: 26%;
-}
-button.btn.login-btn {
-    padding: 8px 20px;
-    font-size: 0.8em;
-    letter-spacing: 1px;
-    margin-bottom: 1em;
-}
+    nav.main-header.navShadow {
+        height: 65px;
+    }
+    ul.showMenu {
+        margin-top: .9rem;
+        & li {
+            height: auto;
+            opacity: 1;
+            visibility: visible;
+            
+            padding-top: .3em;
+            background: rgba(0, 0, 0, 0.9);
+            &a{
+                color: #fff;
+            }
+        }
+    }
+    .nav-honey li {
+        width:100%;
+        float: left;
+        padding-left:0px;
+        opacity: 0;
+        visibility: hidden;
+        margin-left: 0;
+        -webkit-transition: all 0.3s 0.1s;
+        transition: all 0.3s 0.1s;
+    }
+    .nav-honey li a{
+        padding:0.5em 0;
+        display: block;
+        
+    }
+    #head-line {
+        -webkit-transform: scale(0.8);
+        transform: scale(0.8);
+    }
+    #brand {
+        padding-left: 30px;
+        float: left;
+        width: 26%;
+    }
+    button.btn.login-btn {
+        padding: 8px 20px;
+        font-size: 0.8em;
+        letter-spacing: 1px;
+        margin-bottom: 1em;
+    }
 }
 
 
@@ -459,7 +471,9 @@ button.btn.login-btn {
 
 @media (min-width: 320px) {
 
-//CSS
+    .study-img{
+        width: 320px !important;
+    }
 
 }
 /* 
@@ -469,7 +483,21 @@ button.btn.login-btn {
 
 @media (min-width: 481px) {
 
-//CSS
+    .card-columns {
+        -webkit-column-count: 2;
+        -moz-column-count: 2;
+        column-count: 2;
+        -webkit-column-gap: 1.25rem;
+        -moz-column-gap: 1.25rem;
+        column-gap: 1.25rem;
+      }
+      .card-columns .card {
+        display: inline-block;
+        width: 100%;
+      }
+      .study-img{
+        width: 350px !important;
+    }
 
 }
 
@@ -480,10 +508,27 @@ button.btn.login-btn {
 */
 
 @media (min-width: 768px) {
-
-//CSS
+    .card-columnsJC {
+        -webkit-column-count: 1;
+        -moz-column-count: 1;
+        column-count: 1;
+        -webkit-column-gap: 1.25rem;
+        -moz-column-gap: 1.25rem;
+        column-gap: 1.25rem;
+      }
+      .card-columnsJC .cardJC {
+        display: inline-block;
+        width: 100%;
+      }
+    //   modificacion para pos columnas de bootstrap
+    .study-img{
+        width: 500px !important;
+    }
+    
 
 }
+
+
 /* 
 ##Device = Laptops, Desktops
 ##Screen = B/w 1025px to 1280px
@@ -491,7 +536,18 @@ button.btn.login-btn {
 
 @media (min-width: 1025px) {
 
-//CSS
+    .card-columns {
+        -webkit-column-count: 3;
+        -moz-column-count: 3;
+        column-count: 3;
+        -webkit-column-gap: 1.25rem;
+        -moz-column-gap: 1.25rem;
+        column-gap: 1.25rem;
+      }
+      .card-columns .card {
+        display: inline-block;
+        width: 100%;
+      }
 
 }
 
