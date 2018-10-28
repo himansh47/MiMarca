@@ -349,8 +349,10 @@ ul.nav-honey {
             font-weight: bold;
         }
         & .study-img{
+                width: 100%;
+                height: auto;
             & img{
-                width: 36rem;
+                   
                 border-radius: 1.7rem;
             }
         }
@@ -385,13 +387,16 @@ ul.nav-honey {
 }
 
 #sec-abilities{
-position: relative;
+    position: relative;
+    & .abilities img{
+        width: 100%;
+    }
 }
 
 
 
 /*parte del responsice del header*/
-@media screen and (max-width: 942px){
+@media screen and (max-width: 992px){
     #menu-toggle {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -469,6 +474,7 @@ position: relative;
         letter-spacing: 1px;
         margin-bottom: 1em;
     }
+    
 }
 
 
@@ -478,11 +484,38 @@ position: relative;
 ##Device = Most of the Smartphones Mobiles (Portrait)
 ##Screen = B/w 320px to 479px
 */
+@media (min-width: 50px) {
+    .study{
+        // margin: 0 0 0 0 !important;
+        // padding: 0 0 0 0 !important;
+        
+        padding-left: 0rem !important;
+        padding-right: 0rem !important;
+        margin-left: 0rem !important;
+        margin-right: 0rem !important;
+        & .study-img{
+            padding: 1rem 15% 1rem 15% !important;
+        }
+    }
+}
 
 @media (min-width: 320px) {
 
     .study-img{
-        width: 320px !important;
+        width: 80%;
+        height: auto;
+    }
+    .study{
+        // margin: 0 0 0 0 !important;
+        // padding: 0 0 0 0 !important;
+        
+        padding-left: 0rem !important;
+        padding-right: 0rem !important;
+        margin-left: 0rem !important;
+        margin-right: 0rem !important;
+        & .study-img{
+            padding: 1rem 15% 1rem 15% !important;
+        }
     }
 
 }
@@ -501,12 +534,19 @@ position: relative;
         -moz-column-gap: 1.25rem;
         column-gap: 1.25rem;
       }
-      .card-columns .card {
-        display: inline-block;
-        width: 100%;
-      }
-      .study-img{
-        width: 350px !important;
+    .card-columns .card {
+    display: inline-block;
+    width: 100%;
+    }
+    .study-img{
+        width: 80%;
+        height: auto;
+    }
+    .study{
+        
+        & .study-img{
+            // padding: 1rem 22% 1rem 22% !important;
+        }
     }
 
 }
@@ -530,10 +570,27 @@ position: relative;
         display: inline-block;
         width: 100%;
       }
-    //   modificacion para pos columnas de bootstrap
-    .study-img{
-        width: 500px !important;
+        //   modificacion para pos columnas de bootstrap
+        .study-img{
+            width: 110%;
+        height: auto;
     }
+    .study{
+        margin: 1rem 0 0 0 !important;
+        padding: 1rem 0 0 0 !important;
+        & .information{
+            padding: 0rem 0 0 0 !important;
+        }
+        & .study-img-container{
+            
+            
+            & .pt-5{
+                padding: 3rem 0 0 0 !important;
+            }
+        }
+    }   
+        
+        
     
 
 }
@@ -558,7 +615,24 @@ position: relative;
         display: inline-block;
         width: 100%;
       }
-
+    //   .study-img{
+    //     width: 600px !important;
+    // }
+    .study{
+        margin: 1rem 0 0 0 !important;
+        padding: 1rem 0 0 0 !important;
+        & .information{
+            padding: 1rem 0 0 0 !important;
+        }
+        & .study-img-container{
+            
+            
+            & .pt-5{
+                padding: 3rem 0 0 0 !important;
+            }
+        }
+    }  
+     
 }
 
 /* 
@@ -568,7 +642,22 @@ position: relative;
 
 @media (min-width: 1281px) {
 
-    //CSS
-    
+    // .study-img{
+    //     width: 800px !important;
+    // }
+    .study{
+        margin: 1rem 0 0 0 !important;
+        padding: 1rem 0 0 0 !important;
+        & .information{
+            padding: 3rem 0 0 0 !important;
+        }
+        & .study-img-container{
+            
+            
+            & .pt-5{
+                padding: 3rem 0 0 0 !important;
+            }
+        }
+    }
 }
 

@@ -308,8 +308,11 @@ ul.nav-honey {
   font-size: 0.85rem;
   font-weight: bold;
 }
+#sec-study .study .study-img {
+  width: 100%;
+  height: auto;
+}
 #sec-study .study .study-img img {
-  width: 36rem;
   border-radius: 1.7rem;
 }
 
@@ -342,9 +345,12 @@ ul.nav-honey {
 #sec-abilities {
   position: relative;
 }
+#sec-abilities .abilities img {
+  width: 100%;
+}
 
 /*parte del responsice del header*/
-@media screen and (max-width: 942px) {
+@media screen and (max-width: 992px) {
   #menu-toggle {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -434,9 +440,31 @@ ul.nav-honey {
 ##Device = Most of the Smartphones Mobiles (Portrait)
 ##Screen = B/w 320px to 479px
 */
+@media (min-width: 50px) {
+  .study {
+    padding-left: 0rem !important;
+    padding-right: 0rem !important;
+    margin-left: 0rem !important;
+    margin-right: 0rem !important;
+  }
+  .study .study-img {
+    padding: 1rem 15% 1rem 15% !important;
+  }
+}
 @media (min-width: 320px) {
   .study-img {
-    width: 320px !important;
+    width: 80%;
+    height: auto;
+  }
+
+  .study {
+    padding-left: 0rem !important;
+    padding-right: 0rem !important;
+    margin-left: 0rem !important;
+    margin-right: 0rem !important;
+  }
+  .study .study-img {
+    padding: 1rem 15% 1rem 15% !important;
   }
 }
 /* 
@@ -459,7 +487,8 @@ ul.nav-honey {
   }
 
   .study-img {
-    width: 350px !important;
+    width: 80%;
+    height: auto;
   }
 }
 /* 
@@ -482,7 +511,19 @@ ul.nav-honey {
   }
 
   .study-img {
-    width: 500px !important;
+    width: 110%;
+    height: auto;
+  }
+
+  .study {
+    margin: 1rem 0 0 0 !important;
+    padding: 1rem 0 0 0 !important;
+  }
+  .study .information {
+    padding: 0rem 0 0 0 !important;
+  }
+  .study .study-img-container .pt-5 {
+    padding: 3rem 0 0 0 !important;
   }
 }
 /* 
@@ -503,10 +544,33 @@ ul.nav-honey {
     display: inline-block;
     width: 100%;
   }
+
+  .study {
+    margin: 1rem 0 0 0 !important;
+    padding: 1rem 0 0 0 !important;
+  }
+  .study .information {
+    padding: 1rem 0 0 0 !important;
+  }
+  .study .study-img-container .pt-5 {
+    padding: 3rem 0 0 0 !important;
+  }
 }
 /* 
 ##Device = Desktops
 ##Screen = 1281px to higher resolution desktops
 */
+@media (min-width: 1281px) {
+  .study {
+    margin: 1rem 0 0 0 !important;
+    padding: 1rem 0 0 0 !important;
+  }
+  .study .information {
+    padding: 3rem 0 0 0 !important;
+  }
+  .study .study-img-container .pt-5 {
+    padding: 3rem 0 0 0 !important;
+  }
+}
 
 /*# sourceMappingURL=juancarlos.css.map */
