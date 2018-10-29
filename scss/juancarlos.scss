@@ -499,6 +499,12 @@ ul.nav-honey {
             color: #006cd1;
         }
     }
+    .img-fluid{
+        padding: 0
+    }
+    .cardJC{
+        padding: 0px !important;
+    }
 }
 
 @media (min-width: 320px) {
@@ -649,8 +655,10 @@ ul.nav-honey {
         width: 100%;
         height: auto;
         margin-top: 5vh;
+        
         & .study-img{
-            width: 100% !important;
+            
+            width: 80% !important;
         }
         
         

@@ -454,6 +454,14 @@ ul.nav-honey {
     padding: 35vh 10vw 40vh 10vw;
     color: #006cd1;
   }
+
+  .img-fluid {
+    padding: 0;
+  }
+
+  .cardJC {
+    padding: 0px !important;
+  }
 }
 @media (min-width: 320px) {
   .study-img-container {
@@ -591,7 +599,7 @@ ul.nav-honey {
     margin-top: 5vh;
   }
   .study-img-container .study-img {
-    width: 100% !important;
+    width: 80% !important;
   }
 }
 /* 
