@@ -286,11 +286,17 @@ ul.nav-honey {
   font-size: 0.85rem;
   font-weight: bold;
 }
-#sec-study .study .study-img {
+#sec-study .study .study-img-container {
   width: 100%;
   height: auto;
 }
-#sec-study .study .study-img img {
+#sec-study .study .study-img-container .img1 {
+  width: 100%;
+  border-radius: 3.7rem;
+}
+#sec-study .study .study-img-container .img2 {
+  margin: 5%;
+  width: 80%;
   border-radius: 1.7rem;
 }
 
@@ -426,13 +432,6 @@ ul.nav-honey {
     margin-right: 0rem !important;
   }
 
-  .study-img-container .img1 {
-    padding: 1rem 15% 1rem 15% !important;
-  }
-  .study-img-container .img2 {
-    padding: 2rem 15% 1rem 15% !important;
-  }
-
   .img-principal {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -462,9 +461,12 @@ ul.nav-honey {
   }
 }
 @media (min-width: 320px) {
-  .study-img {
+  .study-img-container {
     width: 80%;
     height: auto;
+  }
+  .study-img-container .study-img {
+    width: 80%;
   }
 
   .study {
@@ -493,9 +495,17 @@ ul.nav-honey {
     width: 100%;
   }
 
-  .study-img {
-    width: 80%;
+  .study-img-container {
+    width: 100%;
     height: auto;
+  }
+  .study-img-container .study-img {
+    width: 60% !important;
+  }
+  .study-img-container .img2 {
+    margin: 0;
+    padding: 0;
+    width: 50% !important;
   }
 
   .img-principal {
@@ -557,9 +567,6 @@ ul.nav-honey {
   .study .information {
     padding: 0rem 0 0 0 !important;
   }
-  .study .study-img-container .img2 {
-    padding: 3rem 0 0 0 !important;
-  }
 
   .img-principal {
     display: -webkit-box;
@@ -586,6 +593,20 @@ ul.nav-honey {
   .img-principal .snow-information {
     text-align: center;
     padding: 35vh 10vw 40vh 10vw;
+  }
+
+  .study-img-container {
+    width: 100%;
+    height: auto;
+    margin-top: 5vh;
+  }
+  .study-img-container .study-img {
+    width: 100% !important;
+  }
+  .study-img-container .img2 {
+    margin: 0;
+    padding: 0;
+    width: 80% !important;
   }
 }
 /* 
@@ -614,9 +635,6 @@ ul.nav-honey {
   .study .information {
     padding: 1rem 0 0 0 !important;
   }
-  .study .study-img-container .img2 {
-    padding: 3rem 0 0 0 !important;
-  }
 }
 /* 
 ##Device = Desktops
@@ -628,9 +646,6 @@ ul.nav-honey {
     padding: 1rem 0 0 0 !important;
   }
   .study .information {
-    padding: 3rem 0 0 0 !important;
-  }
-  .study .study-img-container .img2 {
     padding: 3rem 0 0 0 !important;
   }
 }

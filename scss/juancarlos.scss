@@ -317,13 +317,19 @@ ul.nav-honey {
             font-size: .85rem;
             font-weight: bold;
         }
-        & .study-img{
+        & .study-img-container{
                 width: 100%;
                 height: auto;
-            & img{
-                   
+            & .img1{
+                width: 100%; 
+                border-radius: 3.7rem;
+            }
+            & .img2{
+                margin: 5%;
+                width: 80%; 
                 border-radius: 1.7rem;
             }
+
         }
 }
 
@@ -466,15 +472,7 @@ ul.nav-honey {
         
         
     }
-    .study-img-container{
-        
-        & .img1{
-            padding: 1rem 15% 1rem 15% !important;
-        }
-        & .img2{
-            padding: 2rem 15% 1rem 15% !important;
-        }
-    }
+    
     .img-principal{
         display: -webkit-box;
         display: -ms-flexbox;
@@ -509,9 +507,12 @@ ul.nav-honey {
 
 @media (min-width: 320px) {
 
-    .study-img{
+    .study-img-container{
         width: 80%;
         height: auto;
+        & .study-img{
+            width: 80%;
+        }
     }
     .study{
         // margin: 0 0 0 0 !important;
@@ -547,15 +548,17 @@ ul.nav-honey {
     display: inline-block;
     width: 100%;
     }
-    .study-img{
-        width: 80%;
+    .study-img-container{
+        width: 100%;
         height: auto;
-    }
-    .study{
-        
         & .study-img{
-            // padding: 1rem 22% 1rem 22% !important;
+            width: 60% !important;
         }
+        & .img2{
+            margin: 0;
+            padding: 0;
+            width: 50% !important;
+        } 
     }
     .img-principal{
         display: -webkit-box;
@@ -619,13 +622,7 @@ ul.nav-honey {
         & .information{
             padding: 0rem 0 0 0 !important;
         }
-        & .study-img-container{
-            
-            
-            & .img2{
-                padding: 3rem 0 0 0 !important;
-            }
-        }
+        
     }   
     .img-principal{
         display: -webkit-box;
@@ -655,6 +652,19 @@ ul.nav-honey {
             text-align: center;
             padding: 35vh 10vw 40vh 10vw;
         }   
+    }
+    .study-img-container{
+        width: 100%;
+        height: auto;
+        margin-top: 5vh;
+        & .study-img{
+            width: 100% !important;
+        }
+        & .img2{
+            margin: 0;
+            padding: 0;
+            width: 80% !important;
+        } 
     }
 
 }
@@ -688,15 +698,9 @@ ul.nav-honey {
         & .information{
             padding: 1rem 0 0 0 !important;
         }
-        & .study-img-container{
-            
-            
-            & .img2{
-                padding: 3rem 0 0 0 !important;
-            }
-        }
+        
     }  
-     
+    
 }
 
 /* 
@@ -715,13 +719,7 @@ ul.nav-honey {
         & .information{
             padding: 3rem 0 0 0 !important;
         }
-        & .study-img-container{
-            
-            
-            & .img2{
-                padding: 3rem 0 0 0 !important;
-            }
-        }
+        
     }
 }
 
