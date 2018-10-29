@@ -322,13 +322,9 @@ ul.nav-honey {
                 height: auto;
             & .img1{
                 width: 100%; 
-                border-radius: 3.7rem;
+                border-radius: .75rem;
             }
-            & .img2{
-                margin: 5%;
-                width: 80%; 
-                border-radius: 1.7rem;
-            }
+            
 
         }
 }
@@ -554,11 +550,7 @@ ul.nav-honey {
         & .study-img{
             width: 60% !important;
         }
-        & .img2{
-            margin: 0;
-            padding: 0;
-            width: 50% !important;
-        } 
+        
     }
     .img-principal{
         display: -webkit-box;
@@ -660,11 +652,9 @@ ul.nav-honey {
         & .study-img{
             width: 100% !important;
         }
-        & .img2{
-            margin: 0;
-            padding: 0;
-            width: 80% !important;
-        } 
+        
+        
+            
     }
 
 }

@@ -292,12 +292,7 @@ ul.nav-honey {
 }
 #sec-study .study .study-img-container .img1 {
   width: 100%;
-  border-radius: 3.7rem;
-}
-#sec-study .study .study-img-container .img2 {
-  margin: 5%;
-  width: 80%;
-  border-radius: 1.7rem;
+  border-radius: 0.75rem;
 }
 
 .cardJC {
@@ -502,11 +497,6 @@ ul.nav-honey {
   .study-img-container .study-img {
     width: 60% !important;
   }
-  .study-img-container .img2 {
-    margin: 0;
-    padding: 0;
-    width: 50% !important;
-  }
 
   .img-principal {
     display: -webkit-box;
@@ -602,11 +592,6 @@ ul.nav-honey {
   }
   .study-img-container .study-img {
     width: 100% !important;
-  }
-  .study-img-container .img2 {
-    margin: 0;
-    padding: 0;
-    width: 80% !important;
   }
 }
 /* 
