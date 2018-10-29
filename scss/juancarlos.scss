@@ -504,6 +504,7 @@ ul.nav-honey {
     }
     .cardJC{
         padding: 0px !important;
+        // margin: -15px !important;
     }
 }
 
@@ -654,7 +655,7 @@ ul.nav-honey {
     .study-img-container{
         width: 100%;
         height: auto;
-        margin-top: 5vh;
+        margin-top: 3%;
         
         & .study-img{
             
@@ -663,6 +664,10 @@ ul.nav-honey {
         
         
             
+    }
+    .cardJC{
+        // padding:  !important;
+        margin: -1% 0% -1% 0% !important;
     }
 
 }
@@ -698,6 +703,11 @@ ul.nav-honey {
         }
         
     }  
+    .study-img-container{
+        width: 100%;
+        height: auto;
+        margin-bottom: 10%
+    }
     
 }
 
