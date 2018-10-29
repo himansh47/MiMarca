@@ -440,10 +440,6 @@ ul.nav-honey {
     letter-spacing: 1px;
     margin-bottom: 1em;
   }
-
-  .img-principal {
-    background: url(../img/animal.jpg);
-  }
 }
 /* 
 ##Device = Most of the Smartphones Mobiles (Portrait)
@@ -462,6 +458,33 @@ ul.nav-honey {
   }
   .study-img-container .img2 {
     padding: 2rem 15% 1rem 15% !important;
+  }
+
+  .img-principal {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-top: 0;
+    height: 100vh;
+    position: relative;
+    background: url(../img/wolf-icon.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+    /* Safari 3.0 */
+    -moz-background-size: cover;
+    /* Gecko 1.9.2 (Firefox 3.6) */
+    -o-background-size: cover;
+    /* Opera 9.5 */
+    background-size: cover;
+    /* Gecko 2.0 (Firefox 4.0) and other CSS3-compliant browsers */
+    -moz-border-image: url(../img/wolf-icon.jpg) 0;
+    background-color: #000;
+    z-index: -3;
+  }
+  .img-principal .snow-information {
+    text-align: center;
+    padding: 20% 10% 25% 10%;
   }
 }
 @media (min-width: 320px) {
@@ -499,6 +522,33 @@ ul.nav-honey {
   .study-img {
     width: 80%;
     height: auto;
+  }
+
+  .img-principal {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-top: 0;
+    height: 100vh;
+    position: relative;
+    background: url(../img/Wolf-4K.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+    /* Safari 3.0 */
+    -moz-background-size: cover;
+    /* Gecko 1.9.2 (Firefox 3.6) */
+    -o-background-size: cover;
+    /* Opera 9.5 */
+    background-size: cover;
+    /* Gecko 2.0 (Firefox 4.0) and other CSS3-compliant browsers */
+    -moz-border-image: url(../img/wolf-dark.jpg) 0;
+    background-color: #000;
+    z-index: -3;
+  }
+  .img-principal .snow-information {
+    text-align: center;
+    padding: 20% 10% 25% 10%;
   }
 }
 /* 
