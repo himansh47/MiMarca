@@ -366,47 +366,11 @@ ul.nav-honey {
 
 
 /*incio de de estilos la parte de contacto*/
-
-
-/*--contact-agileinfo--*/
-
-.contact-agileinfo {
-    padding: 73px 0px;
-    padding-bottom: 19px;
+.contact-title{
+    font-size: 5rem;
+    color: #0041b9;
+    // padding-top: 35%;
 }
-
-.contact-agileinfo-text {
-    margin: 45px auto;
-}
-
-.mail-message-area {
-    width: 100%;
-    padding: 0 15px;
-}
-
-.mail-message {
-    width: 100%;
-    background: rgba(255, 255, 255, 0.8) !important;
-    -webkit-transition: all 0.7s;
-    -moz-transition: all 0.7s;
-    transition: all 0.7s;
-    margin: 0 auto;
-    border-radius: 0;
-}
-
-.not-visible-message {
-    height: 0px;
-    opacity: 0;
-}
-
-.visible-message {
-    height: auto;
-    opacity: 1;
-    margin: 25px auto 0;
-}
-
-
-/* Input Styles */
 .form-contact{
     background-color: #000;
     border-radius: 1.2em;
@@ -774,7 +738,17 @@ ul.nav-honey {
         // padding:  !important;
         margin: -1% 0% -1% 0% !important;
     }
-    
+    .contact-title{
+        font-size: 15rem;
+        padding-top: 35%;
+        & h3{
+            padding-top: 10px;
+            font-size: 2.5rem;
+        }
+    }
+    .contact-items{
+        font-size: 1.5rem;
+    }
 }
 
 
